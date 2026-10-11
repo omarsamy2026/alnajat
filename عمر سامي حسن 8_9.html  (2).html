@@ -1,0 +1,576 @@
+<html> <!DOCTYPE html> <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسة النجاة الأهلية بنين - السالمية</title>
+    <!-- استدعاء مكتبة الأيقونات الشهيرة Font Awesome لجعل أزرار السوشيال ميديا احترافية -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        :root {
+            --primary-color: #005a43;
+            --secondary-color: #d4af37;
+            --dark-color: #2c3e50;
+            --light-color: #f9f9f9;
+            --instagram-color: #e1306c;
+            --facebook-color: #1877f2;
+            --x-color: #1da1f2;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            color: var(--dark-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), #004030);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border: 2px solid var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px auto;
+            font-size: 2.2rem;
+            color: var(--secondary-color);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: -40px auto 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            font-size: 1.8rem;
+        }
+
+        .grid-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: var(--light-color);
+            padding: 25px;
+            border-radius: 8px;
+            border-right: 5px solid var(--primary-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.3rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 1rem;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: right;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #fcfcfc;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-main {
+            background-color: var(--primary-color);
+            box-shadow: 0 3px 10px rgba(0, 90, 67, 0.2);
+        }
+
+        .btn-main:hover {
+            background-color: var(--secondary-color);
+            color: var(--dark-color);
+        }
+
+        /* تنسيقات أزرار التواصل الاجتماعي المتطورة */
+        .btn-instagram {
+            background-color: var(--instagram-color);
+            box-shadow: 0 3px 10px rgba(225, 48, 108, 0.2);
+        }
+        .btn-instagram:hover {
+            opacity: 0.9;
+            transform: scale(1.03);
+        }
+
+        .btn-facebook {
+            background-color: var(--facebook-color);
+            box-shadow: 0 3px 10px rgba(24, 119, 242, 0.2);
+        }
+        .btn-facebook:hover {
+            opacity: 0.9;
+            transform: scale(1.03);
+        }
+
+        .btn-x {
+            background-color: #111;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-x:hover {
+            opacity: 0.9;
+            transform: scale(1.03);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background-color: var(--dark-color);
+            color: #b3bdc6;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo-placeholder">🏫</div>
+        <h1>مدرسة النجاة الأهلية بنين (السالمية)</h1>
+        <p>صرح التميز الأكاديمي والتربوي والأصالة القيمية بدولة الكويت</p>
+    </div>
+
+    <div class="container">
+        <h2>📌 نبذة عن الصرح التعليمي</h2>
+        <p>تعتبر <strong>مدرسة النجاة الأهلية للبنين بالسالمية</strong> من الركائز التعليمية الكبرى التابعة لجمعية النجاة الخيرية. تأسست المدرسة لتجمع بين قوة المناهج الأكاديمية والتربية الإسلامية الأصيلة، موفرة بيئة تعليمية متكاملة تشمل المراحل: <strong>الابتدائية، المتوسطة، والثانوية</strong>.</p>
+
+        <h2>🎯 ركائز التميز في مدرسة النجاة</h2>
+        <div class="grid-features">
+            <div class="feature-card">
+                <h3>📖 القرآن الكريم</h3>
+                <p>تقديم حلقات مجانية يومية لتحفيظ القرآن الكريم وتجويده لغرس الثقافة الإسلامية.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🏆 الصدارة الأكاديمية</h3>
+                <p>تضم المدرسة سنوياً نخبة من الطلاب الأوائل والمتفوقين على مستوى دولة الكويت.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌍 اعتماد كامبريدج</h3>
+                <p>مركز معتمد لبرامج كامبريدج للتطوير المهني للمعلمين لضمان جودة التعليم العالمي.</p>
+            </div>
+        </div>
+
+        <h2>📊 بطاقة التعرف والبيانات اللوجستية</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>المحور</th>
+                    <th>التفاصيل الموثقة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>الموقع الجغرافي</strong></td>
+                    <td>السالمية - قطعة 10 - شارع المغيرة بن شعبة (مقابل بوليفارد مول)</td>
+                </tr>
+                <tr>
+                    <td><strong>المراحل الدراسية</strong></td>
+                    <td>بنين: ابتدائي 👦🏻 - متوسط 🧑🏻 - ثانوي 👨🏻</td>
+                </tr>
+                <tr>
+                    <td><strong>المنهج الدراسي</strong></td>
+                    <td>منهج عربي معتمد تابع لوزارة التربية والتعليم الكويتية</td>
+                </tr>
+                <tr>
+                    <td><strong>أرقام الهواتف</strong></td>
+                    <td><bdi>25619812</bdi> / <bdi>25619814</bdi></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>📞 قنوات التواصل والروابط الرسمية</h2>
+        <p>يمكنكم الدخول مباشرة إلى الموقع الرسمي أو المنصات الرسمية للمدرسة عبر الأزرار التالية:</p>
+        
+        <div class="btn-container">
+            <!-- رابط الموقع الإلكتروني -->
+            <a href="https://alnajat.edu.kw" class="btn-link btn-main" target="_blank">
+                <i class="fas fa-globe"></i> بوابة مدارس النجاة الإلكترونية
+            </a>
+
+            <!-- روابط منصة إنستغرام الفرعية لسالمية بنين -->
+            <a href="https://instagram.com" class="btn-link btn-instagram" target="_blank">
+                <i class="fab fa-instagram"></i> إنستغرام (المرحلة المتوسطة)
+            </a>
+            
+            <a href="https://instagram.com" class="btn-link btn-instagram" target="_blank">
+                <i class="fab fa-instagram"></i> إنستغرام (المرحلة الابتدائية)
+            </a>
+
+            <!-- رابط فيسبوك العام للمدارس -->
+            <a href="https://facebook.com" class="btn-link btn-facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i> الصفحة الرسمية على فيسبوك
+            </a>
+
+            <!-- رابط منصة إكس (تويتر سابقاً) -->
+            <a href="https://x.com" class="btn-link btn-x" target="_blank">
+                <i class="fab fa-x-twitter"></i> الحساب الرسمي على منصة X
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        جميع الحقوق محفوظة © مدارس النجاة الأهلية بدولة الكويت
+    </div>
+
+</body>
+</html> <!-- أضف هذا الجزء داخل كود الويب الخاص بك في المكان المناسب -->
+<div class="info-box" style="margin-top: 30px; border-right: 5px solid #005a43;">
+    <h3 style="color: #005a43; margin-top:0;"><i class="fas fa-calculator"></i> حاسبة التميز: احسب معدلك المتوقع</h3>
+    <p>أدخل درجاتك الافتراضية لمعرفة النسبة المئوية فورًا:</p>
+    <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+        <input type="number" id="grade1" placeholder="درجة المادة 1 (من 100)" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; flex: 1;">
+        <input type="number" id="grade2" placeholder="درجة المادة 2 (من 100)" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; flex: 1;">
+        <button onclick="calculateGPA()" style="background-color: #005a43; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold;">احسب النسبة</button>
+    </div>
+    <p id="result-gpa" style="font-weight: bold; color: #d4af37; font-size: 1.1rem; margin: 0;"></p>
+</div>
+
+<script>
+function calculateGPA() {
+    var g1 = parseFloat(document.getElementById('grade1').value) || 0;
+    var g2 = parseFloat(document.getElementById('grade2').value) || 0;
+    if(g1 > 100 || g2 > 100 || g1 < 0 || g2 < 0) {
+        document.getElementById('result-gpa').innerText = "الرجاء إدخال درجات صحيحة بين 0 و 100";
+        return;
+    }
+    var total = (g1 + g2) / 2;
+    document.getElementById('result-gpa').innerText = "معدلك المتوقع الحالي هو: " + total.toFixed(2) + "% " + (total >= 90 ? "🏆 فائق ممتاز!" : "");
+}
+</script>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة التميز الرقمية - مدرسة النجاة السالمية</title>
+    <!-- استدعاء مكتبة الأيقونات العالمية Font Awesome -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        :root {
+            --primary-color: #005a43;
+            --secondary-color: #d4af37;
+            --dark-color: #2c3e50;
+            --light-color: #f4f6f8;
+            --success-color: #27ae60;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), #004030);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .badge-top {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--dark-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: -30px auto 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            font-size: 1.7rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* أدوات الذكاء الأكاديمي وحساب المعدل */
+        .calculator-box {
+            background-color: #fff;
+            border: 2px solid #eef2f5;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+
+        .input-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .input-group input {
+            flex: 1;
+            min-width: 150px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .calc-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .calc-btn:hover { background-color: #004030; }
+
+        .result-display {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--success-color);
+            padding: 10px;
+            background-color: #e8f8f0;
+            border-radius: 6px;
+            display: none;
+            text-align: center;
+        }
+
+        /* لوحة الشرف التفاعلية */
+        .honor-roll {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .student-card {
+            background: linear-gradient(145deg, #ffffff, #fdfdfd);
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .student-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary-color);
+        }
+
+        .student-card .crown {
+            color: var(--secondary-color);
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        /* الروابط والأزرار المحدثة */
+        .btn-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-main { background-color: var(--primary-color); }
+        .btn-main:hover { background-color: var(--secondary-color); color: var(--dark-color); }
+        .btn-insta { background-color: #e1306c; }
+        .btn-insta:hover { opacity: 0.9; }
+
+        .tips-list li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background-color: var(--dark-color);
+            color: #b3bdc6;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="badge-top"><i class="fas fa-star"></i> مشروع دراسي متميز - فئة النخبة <i class="fas fa-star"></i></div>
+        <h1>بوابة النجاة الرقمية للتميز الأكاديمي</h1>
+        <p>تحت إشراف مدرسة النجاة الأهلية بنين - فرع السالمية</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- قسم تكنولوجيا المشروع: حاسبة المعدل الذكية (لجعل مشروعك تفاعلياً وأقوى مشروع) -->
+        <h2><i class="fas fa-laptop-code"></i> أداة الطالب المتميز: حاسبة المعدل الفورية</h2>
+        <p>قمنا بتطوير هذه الأداة البرمجية التفاعلية لمساعدة طلاب الكويت على تتبع ومراقبة أدائهم الدراسي والوصول للصدارة:</p>
+        
+        <div class="calculator-box">
+            <div class="input-group">
+                <input type="number" id="grade1" placeholder="درجة الفترة الأولى" max="100">
+                <input type="number" id="grade2" placeholder="درجة الأعمال اليومية" max="100">
+                <input type="number" id="grade3" placeholder="درجة الاختبار النهائي" max="100">
+            </div>
+            <button class="calc-btn" onclick="calculateGPA()">احسب معدلي الحالي فوراً</button>
+            <div class="result-display" id="gpaResult"></div>
+        </div>
+
+        <!-- كيف تصبح من أفضل الطلاب في الكويت -->
+        <h2><i class="fas fa-user-graduate"></i> نبذه عن الطريق لتصبح من أفضل طلاب الكويت</h2>
+        <p>للنجاح الاستثنائي والوصول إلى لوحات الشرف السنوية في وزارة التربية، اتبع هذه الاستراتيجيات الموثقة علمياً وعملياً:</p>
+        <ul class="tips-list">
+            <li><strong>تنظيم الوقت المتقدم:</strong> صمم جدولاً دراسياً ثابتاً يعتمد على فترات تركيز مدتها 25 دقيقة (تقنية بومودورو) تليها 5 دقائق راحة لزيادة الاستيعاب.</li>
+            <li><strong>استغلال الذكاء الاصطناعي الإيجابي:</strong> استخدم أدوات مثل **ChatGPT** و**Gemini** كمعلمين خصوصيين لتطوير وتصميم خطط مراجعة مخصصة، تلخيص الدروس المعقدة، والبحث عن اختبارات تجريبية تفاعلية.</li>
+            <li><strong>البحث الرقمي المعمق:</strong> لا تكتفي بملخصات الفصول؛ بل ابحث عن مصادر تعليمية رقمية تفاعلية ومقاطع مرئية لتعميق فهمك للمواد العلمية المعقدة لتثبيت المعلومة.</li>
+            <li><strong>المشاركة الإيجابية بالمدرسة:</strong> احرص على التواجد المتميز في الإذاعة المدرسية وحلقات تحفيظ القرآن المقامة بمسرح المدرسة، وبادر بمساعدة زملائك؛ فالتعليم يعزز الحفظ بنسبة 90%.</li>
+        </ul>
+
+        <!-- لوحة شرف تفاعلية للمتفوقين -->
+        <h2><i class="fas fa-trophy"></i> لوحة شرف متفوقي النجاة السالمية</h2>
+        <div class="honor-roll">
+            <div class="student-card">
+                <div class="crown"><i class="fas fa-crown"></i></div>
+                <h3>قائمة فائقين الثانوية العامة</h3>
+                <p>تحتكر المدرسة سنوياً من 9 إلى 11 مركزاً متقدماً ضمن قائمة الخمسين الأوائل على مستوى دولة الكويت.</p>
+            </div>
+            <div class="student-card">
+                <div class="crown"><i class="fas fa-medal"></i></div>
+                <h3>فائقو حلقات القرآن الكريم</h3>
+                <p>تكريم مستمر وسنوي برعاية جمعية النجاة الخيرية مع جوائز وإعفاءات مادية مجزية للطلبة الأوائل.</p>
+            </div>
+        </div>
+
+        <!-- روابط التواصل الشاملة والموثقة للمدرسة -->
+        <h2><i class="fas fa-link"></i> دليل المنصات والروابط الرسمية الموثقة</h2>
+        <div class="btn-grid">
+            <a href="https://alnajat.edu.kw" class="btn-link btn-main" target="_blank"><i class="fas fa-globe"></i> بوابة النجاة الإلكترونية</a>
+            <a href="https://instagram.com" class="btn-link btn-insta" target="_blank"><i class="fab fa-instagram"></i> إنستغرام الثانوية</a>
+            <a href="https://instagram.com" class="btn-link btn-insta" target="_blank"><i class="fab fa-instagram"></i> إنستغرام المتوسطة</a>
+            <a href="https://instagram.com" class="btn-link btn-insta" target="_blank"><i class="fab fa-instagram"></i> إنستغرام الابتدائية</a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        تم تطوير هذا المشروع البرمجي التفاعلي باستخدام أدوات التطوير الاحترافية ليكون نموذجاً يحتذى به في مدارس دولة الكويت.
+    </div>
+
+    <!-- كود الجافا سكريبت التفاعلي لتشغيل الحاسبة الذكية فوراً في المتصفح -->
+    <script>
+        function calculateGPA() {
+            const g1 = parseFloat(document.getElementById('grade1').value);
+            const g2 = parseFloat(document.getElementById('grade2').value);
+
